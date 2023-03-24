@@ -6,7 +6,16 @@ export const ValueList=({valueList,deleteCard})=>{
 
    
 
-        const total=valueList.reduce((previousValue,currentValue)=>previousValue+currentValue.value,0,)
+        const total=valueList.reduce((previousValue,currentValue)=>{
+
+        if(currentValue.category=='Entrada'){
+
+            return  previousValue+currentValue.value
+        }else{
+            return previousValue-currentValue.value
+        }
+    
+    },0,)
     
     return(
         <>
