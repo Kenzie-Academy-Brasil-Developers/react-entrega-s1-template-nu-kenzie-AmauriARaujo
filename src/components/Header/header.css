@@ -11,8 +11,8 @@ header>img{
   max-width: 50%;
 }
 
-@media(min-width:800px){
+@media(min-width:1400px){
   header{
-    padding-left: 4rem;
+  padding-left: 12rem;
   }
 }
